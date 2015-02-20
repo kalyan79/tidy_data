@@ -1,4 +1,4 @@
-Experiment
+#Experiment
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities
 (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist.
 Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz.
@@ -11,17 +11,17 @@ of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signa
  frequency components, therefore a filter with 0.3 Hz cutoff frequency was used.
  From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
  
-Tidy data analysis
+#Tidy data analysis
 The purpose of this activity to collect raw data, apply transformation and create a tidy data required for further analysis
 Final tidy data should contain Mean and standard deviation values from acclerometer and Gyroscope
  
  
-Raw data
+#Raw data
  
 Raw data are obtained from UCI Machine Learning repository: http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones.
  
  
-Data information
+#Data information
  
 For each record in the dataset it is provided:
 •Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.
@@ -33,7 +33,7 @@ For each record in the dataset it is provided:
  
 Created run_analysis.R functions reads raw input file and creates tidy data
                
-Step 1:
+#Step 1:
 Read input files
 	features.txt - List of all features.
 	activity_labels.txt -  Links the class labels with their activity name.
@@ -44,11 +44,11 @@ Read input files
 	subject_train.txt - Training subject details
 	subject_test.txt - Text subject details
 
-Step 2:
+#Step 2:
 Read and combine training  and test data set
 Combine subject information and training labels
  
-Step 3:
+#Step 3:
 All training activity numbers translated as follows
 	1 WALKING
 	2 WALKING_UPSTAIRS
@@ -57,7 +57,7 @@ All training activity numbers translated as follows
 	5 STANDING
 	6 LAYING
  
-Step 4:
+#Step 4:
 Derive the below Complete of data variable  ( XYZ denotes 3 measurements for 3 axis)
  
 	TimeBodyAcc-XYZ
@@ -78,10 +78,10 @@ Derive the below Complete of data variable  ( XYZ denotes 3 measurements for 3 a
 	FrequencyBodyGyroMag
 	FrequencyBodyGyroJerkMag
 
-Step 5:
+#Step 5:
 Calculate average for each variable for each activity and each subject.
  
-Step 6:
+#Step 6:
 Final data set contain measurement for each subject's individual activity  in one records
 Accelerometer measurements are standard gravity units 'g'.
 Gyroscope measurements are radians/second.
