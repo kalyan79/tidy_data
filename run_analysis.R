@@ -6,7 +6,7 @@ run_analysis <- function() {
     
     #-- Extracting only mean and standard deviation measurements for processing
     features_df <- features_df[which(features_df$descr %like%
-                                         'mean[()]' | features_df$descr %like% 'std()' ),]
+                                    'mean[()]' | features_df$descr %like% 'std()' ),]
     features_df$descr <- gsub('[()]','',features_df$descr)
     req_fld <- features_df$sno
     mycols <- rep("NULL", 561)
