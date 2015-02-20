@@ -33,6 +33,6 @@ run_analysis.R functions reads input file and creates tidy data as follows
 10. Merges activity_label and x_tidy_data to get the descriptive activity name for the activity name in x_tidy_data
     x_tidy_data now formatted with mean,standard deviation values and activity label for each subject.
  
-Final data set(average) and output
+#Final data set(average) and output
 11. Using summarise_each function, it creates  a second independent tidy data set in x_tidy_data with the average of each variable for each activity and each subject.
 12. Formats x_tidy_data  and writes it to output file subject_activity.txt.
